@@ -1,0 +1,129 @@
+.home-container{
+    height: 100vh;
+}
+.intro-section{
+    display: flex;
+    overflow: hidden;
+    height: 90vh;
+}
+
+/* left section designing start here */
+
+
+.intro-left-section{
+    display: flex;
+    align-items: center;
+   
+}
+.intro-left{
+    z-index: 99;
+}
+.intro-left h1{
+    font-size: 3rem;
+}
+.intro-left p{
+    max-width: 900px;
+    margin-top: 1rem;
+    font-size: 22px;
+}
+.intro-buttons{
+    margin-top: 2rem;
+}
+.intro-buttons .white-button{
+    margin-left: 1rem;
+}
+.intro-buttons{
+    display: flex;
+}
+.intro-buttons .white-activeButton{
+    display: flex;
+}
+.intro-buttons .white-activeButton svg{
+    margin-top: -.14rem;
+    margin-left: .5rem;
+}
+.white-activeButton:hover .arrow-path{
+    stroke: white;
+}
+
+
+/* rightside image styling starts here */
+
+.intro-right-section{
+   position: absolute;
+   right: 10px;
+ 
+}
+.intro-right img{
+  z-index: -99;
+  display: block;
+}
+
+
+/* bright theme working here */
+
+#bright .blue-activeButton{
+    border:2px solid #9D25DD;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    background-color: white;
+}
+#bright .blue-activeButton:hover{
+    border:2px solid #9D25DD;
+    color: rgb(255, 255, 255);
+    background-color: white;
+}
+#bright .white-activeButton{
+    border:2px solid #9D25DD;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    background-color: white;
+}
+#bright .white-activeButton:hover{
+    border:2px solid #9D25DD;
+    color: rgb(255, 255, 255);
+    background-color: white;
+}
+
+
+
+/* RESPONSIVNESS WORKING HERE */
+
+
+@media screen and (max-width:700px) {
+    .intro-left{
+        margin-top: rem;
+    }
+    .intro-left h1{
+        font-size: 1.5rem;
+    }
+    .intro-left p{
+        /* max-width: 900px; */
+        margin-top: .5rem;
+        font-size: 15px;
+    }
+    /* .intro-buttons{
+        margin-top: 2rem;
+    }
+    .intro-buttons .white-button{
+        margin-left: 1rem;
+    }
+    .intro-buttons{
+        display: flex;
+    }
+    .intro-buttons .white-activeButton{
+        display: flex;
+    }
+    .intro-buttons .white-activeButton svg{
+        margin-top: -.14rem;
+        margin-left: .5rem;
+    }
+    .white-activeButton:hover .arrow-path{
+        stroke: white;
+    } */
+    .intro-right img{
+        display: none;
+    }
+}
+
+
